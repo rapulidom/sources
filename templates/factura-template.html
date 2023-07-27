@@ -25,6 +25,7 @@
         font-family: Arial, sans-serif;
         font-size: 14px;
         font-family: SourceSansPro;
+        word-wrap: break-word;
       }
 
       header {
@@ -44,7 +45,7 @@
 
       #company {
         float: right;
-        text-align: right;
+        text-align: left;
       }
 
       #details {
@@ -176,6 +177,7 @@
 
       #notices .notice {
         font-size: 1.2em;
+        word-wrap: break-word;
       }
 
       footer {
@@ -220,14 +222,10 @@
           <div class="email">Uso CDFI : $usoCdfiId$ - $usoCdfi$</div>
         </div>
         <div id="invoice">
-          <h1 style="word-wrap: break-word">Factura No.$folio$</h1>
-          <div class="date" style="word-wrap: break-word">
-            Fecha de Facturación: $fechaGeneracionFactura$
-          </div>
-          <div class="date" style="word-wrap: break-word">
-            Forma de pago: $formaPagoId$ - $formaPago$
-          </div>
-          <div style="word-wrap: break-word">Tipo CDFI: $tipoCdfi$</div>
+          <h1>Factura No.$folio$</h1>
+          <div class="date">Fecha de Facturación: $fechaGeneracionFactura$</div>
+          <div class="date">Forma de pago: $formaPagoId$ - $formaPago$</div>
+          <div>Tipo CDFI: $tipoCdfi$</div>
         </div>
       </div>
       <table border="0" cellspacing="0" cellpadding="0">
@@ -278,24 +276,14 @@
       </div>
       <div id="notices">
         <div>Información Fiscal:</div>
-        <div class="notice" style="word-wrap: break-word">
-          Folio Fiscal : $folioFiscalDigital$
-        </div>
-        <div class="notice" style="word-wrap: break-word">
-          Fecha de Certificación : $fechaCertificacion$
-        </div>
-        <div class="notice" style="word-wrap: break-word">
-          Certificado Digital : $certificadoDigital$
-        </div>
+        <div class="notice">Folio Fiscal : $folioFiscalDigital$</div>
+        <div class="notice">Fecha de Certificación : $fechaCertificacion$</div>
+        <div class="notice">Certificado Digital : $certificadoDigital$</div>
       </div>
       <div id="notices">
         <div>Cadenas de Firmas Fiscales:</div>
-        <div class="notice" style="word-wrap: break-word">
-          Sello Digital SAT : $selloDigitalSat$
-        </div>
-        <div class="notice" style="word-wrap: break-word">
-          Cadena Original : $cadenaOriginal$
-        </div>
+        <div class="notice">Sello Digital SAT : $selloDigitalSat$</div>
+        <div class="notice">Cadena Original : $cadenaOriginal$</div>
       </div>
     </main>
     <footer>Factura solo informativa.</footer>
