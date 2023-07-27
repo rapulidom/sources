@@ -130,9 +130,6 @@
         background: #dddddd;
       }
 
-      table .qty {
-      }
-
       table .total {
         background: #57b223;
         color: #ffffff;
@@ -218,7 +215,7 @@
       </div>
     </header>
     <main>
-      <div id="details" class="clearfix" style="word-wrap: break-word">
+      <div id="details" class="clearfix">
         <div id="client">
           <div class="to">Factura para:</div>
           <h2 class="name">$nombreReceptor$</h2>
@@ -227,10 +224,14 @@
           <div class="email">Uso CDFI : $usoCdfiId$ - $usoCdfi$</div>
         </div>
         <div id="invoice">
-          <h1>Factura No.$folio$</h1>
-          <div class="date">Fecha de Facturación: $fechaGeneracionFactura$</div>
-          <div class="date">Forma de pago: $formaPagoId$ - $formaPago$</div>
-          <div>Tipo CDFI: $tipoCdfi$</div>
+          <h1 style="word-wrap: break-word">Factura No.$folio$</h1>
+          <div class="date" style="word-wrap: break-word">
+            Fecha de Facturación: $fechaGeneracionFactura$
+          </div>
+          <div class="date" style="word-wrap: break-word">
+            Forma de pago: $formaPagoId$ - $formaPago$
+          </div>
+          <div style="word-wrap: break-word">Tipo CDFI: $tipoCdfi$</div>
         </div>
       </div>
       <table border="0" cellspacing="0" cellpadding="0">
