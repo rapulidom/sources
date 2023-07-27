@@ -218,7 +218,7 @@
       </div>
     </header>
     <main>
-      <div id="details" class="clearfix">
+      <div id="details" class="clearfix" style="word-wrap: break-word">
         <div id="client">
           <div class="to">Factura para:</div>
           <h2 class="name">$nombreReceptor$</h2>
@@ -281,14 +281,24 @@
       </div>
       <div id="notices">
         <div>Información Fiscal:</div>
-        <div class="notice">Folio Fiscal : $folioFiscalDigital$</div>
-        <div class="notice">Fecha de Certificación : $fechaCertificacion$</div>
-        <div class="notice">Certificado Digital : $certificadoDigital$</div>
+        <div class="notice" style="word-wrap: break-word">
+          Folio Fiscal : $folioFiscalDigital$
+        </div>
+        <div class="notice" style="word-wrap: break-word">
+          Fecha de Certificación : $fechaCertificacion$
+        </div>
+        <div class="notice" style="word-wrap: break-word">
+          Certificado Digital : $certificadoDigital$
+        </div>
       </div>
       <div id="notices">
         <div>Cadenas de Firmas Fiscales:</div>
-        <div class="notice">Sello Digital SAT : $selloDigitalSat$</div>
-        <div class="notice">Cadena Original : $cadenaOriginal$</div>
+        <div class="notice" style="word-wrap: break-word">
+          Sello Digital SAT : $selloDigitalSat$
+        </div>
+        <div class="notice" style="word-wrap: break-word">
+          Cadena Original : $cadenaOriginal$
+        </div>
       </div>
     </main>
     <footer>Factura solo informativa.</footer>
